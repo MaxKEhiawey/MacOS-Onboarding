@@ -7,7 +7,6 @@
 
 import SwiftUI
 
-
     // custom capsule button
 func capsuleButton(isSelected: Bool = false, label: String, action: @escaping () -> Void) -> some View {
     return Button(action: action) {
