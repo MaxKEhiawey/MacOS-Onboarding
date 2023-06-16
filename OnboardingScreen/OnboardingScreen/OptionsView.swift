@@ -15,7 +15,13 @@ struct OptionsView: View {
                 VStack(alignment: .center, spacing: 40) {
                     Text("Hey there! What brings you here?")
                         .font(.system(size: 40, weight: .bold))
-
+                    Text("This will help us make great recommendations.")
+                    VStack(spacing: 32) {
+                        capsuleButton(isSelected: true, label: "+  Social Interaction") {}
+                        capsuleButton(label: "+  Personal development") {}
+                        capsuleButton(label: "+  Entertainment and fun") {}
+                        capsuleButton(label: "+  Rewards and recognition") {}
+                    }
                     Spacer()
                     Button {
 
@@ -29,11 +35,10 @@ struct OptionsView: View {
                             RoundedRectangle(cornerRadius: 8)
                                 .stroke(Color("ColorBlueBG"), lineWidth: 1)
                         )
-
                 }
-                .frame(height: screen.screenSize.height*0.95)
+                .frame(height: screen.screenSize.height*0.9)
             }
-            .padding(.top, 40)
+            .padding(.top, 48)
             .font(.system(size: 22, weight: .regular))
             .frame(maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .center)
             .foregroundColor(.black)
