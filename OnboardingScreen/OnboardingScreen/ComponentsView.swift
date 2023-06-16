@@ -7,6 +7,24 @@
 
 import SwiftUI
 
+
+    // custom capsule button
+func capsuleButton(isSelected: Bool = false, label: String, action: @escaping () -> Void) -> some View {
+    return Button(action: action) {
+        Text(label)
+            .frame(maxWidth: Screen().screenSize.width*0.2)
+            .padding(8)
+            .foregroundColor(isSelected ? .white: .black)
+            .background(
+                Capsule()
+                    .fill( isSelected ? Color("ColorBlueBG"): Color.white)
+            )
+            .overlay(
+                RoundedRectangle(cornerRadius: 20)
+                    .stroke(Color.gray, lineWidth: 1))
+
+    }
+}
 //single textfield view
 struct TextFieldView: View {
     @Binding var fieldName: String
