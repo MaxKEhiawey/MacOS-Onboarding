@@ -29,6 +29,7 @@ struct TabsView: View {
             Text("Tab 4")
                 .tag(3)
         }
+        .highPriorityGesture(DragGesture())
         .tabViewStyle(PageTabViewStyle())
         .navigationBarBackButtonHidden(true)
     }
