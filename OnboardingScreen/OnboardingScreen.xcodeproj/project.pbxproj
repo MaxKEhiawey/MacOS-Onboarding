@@ -25,6 +25,7 @@
 		EB0D6D2E2A3D104500E1E127 /* InterestOptionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0D6D2D2A3D104500E1E127 /* InterestOptionsView.swift */; };
 		EB0D6D302A3D1B9E00E1E127 /* SuccessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0D6D2F2A3D1B9E00E1E127 /* SuccessView.swift */; };
 		EB0D6D322A3D1BB900E1E127 /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0D6D312A3D1BB900E1E127 /* LottieView.swift */; };
+		EB0D6D342A3D250C00E1E127 /* RegisterForView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0D6D332A3D250C00E1E127 /* RegisterForView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		EB0D6D2D2A3D104500E1E127 /* InterestOptionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterestOptionsView.swift; sourceTree = "<group>"; };
 		EB0D6D2F2A3D1B9E00E1E127 /* SuccessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessView.swift; sourceTree = "<group>"; };
 		EB0D6D312A3D1BB900E1E127 /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
+		EB0D6D332A3D250C00E1E127 /* RegisterForView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterForView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +135,7 @@
 				EB0D6D2D2A3D104500E1E127 /* InterestOptionsView.swift */,
 				EB0D6D2F2A3D1B9E00E1E127 /* SuccessView.swift */,
 				EB0D6D312A3D1BB900E1E127 /* LottieView.swift */,
+				EB0D6D332A3D250C00E1E127 /* RegisterForView.swift */,
 			);
 			path = OnboardingScreen;
 			sourceTree = "<group>";
@@ -305,6 +308,7 @@
 				EB0D6D222A3CEE8B00E1E127 /* PhotoPickerView.swift in Sources */,
 				EB0D6CEF2A3C543F00E1E127 /* OnboardingScreenApp.swift in Sources */,
 				EB0D6D262A3D00D500E1E127 /* SurveyView.swift in Sources */,
+				EB0D6D342A3D250C00E1E127 /* RegisterForView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
