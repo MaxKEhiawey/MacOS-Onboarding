@@ -11,7 +11,8 @@ struct TabsView: View {
     @State  var selectedTab = 0
     var body: some View {
         TabView(selection: $selectedTab) {
-            SurveyView()
+
+            InterestsView()
            // RegisterView()
                 .onTapGesture {
                    // selectedTab+=1
@@ -22,7 +23,7 @@ struct TabsView: View {
                     //selectedTab+=1
                 }
                 .tag(1)
-            Text("Tab 3")
+            SurveyView()
                 .tag(2)
                 .onTapGesture {
                     //selectedTab+=1
