@@ -11,20 +11,21 @@ struct TabsView: View {
     @State  var selectedTab = 0
     var body: some View {
         TabView(selection: $selectedTab) {
-            RegisterView()
+            SurveyView()
+           // RegisterView()
                 .onTapGesture {
                    // selectedTab+=1
                 }
             .tag(0)
-            Text("Tab 2")
+            AddPhotoView()
                 .onTapGesture {
-                    selectedTab+=1
+                    //selectedTab+=1
                 }
                 .tag(1)
             Text("Tab 3")
                 .tag(2)
                 .onTapGesture {
-                    selectedTab+=1
+                    //selectedTab+=1
                 }
             Text("Tab 4")
                 .tag(3)
