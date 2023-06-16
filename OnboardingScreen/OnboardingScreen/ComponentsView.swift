@@ -161,8 +161,10 @@ struct HalfPageView: View {
                     .resizable()
                     .scaledToFill()
                     .edgesIgnoringSafeArea(.all)
+
             }
             .frame(maxWidth: screen.screenSize.width*0.5, minHeight: 0, maxHeight: .infinity, alignment: .center)
+            .padding(.leading)
             .background(
                 Image("backgroundImage")
                     .resizable()
