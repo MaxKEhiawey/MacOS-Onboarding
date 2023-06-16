@@ -11,8 +11,8 @@ struct TabsView: View {
     @State  var selectedTab = 0
     var body: some View {
         TabView(selection: $selectedTab) {
+            SuccessView()
 
-            InterestsView()
            // RegisterView()
                 .onTapGesture {
                    // selectedTab+=1
@@ -28,8 +28,10 @@ struct TabsView: View {
                 .onTapGesture {
                     //selectedTab+=1
                 }
-            Text("Tab 4")
+            InterestsView()
                 .tag(3)
+            SuccessView()
+                .tag(4)
         }
         .highPriorityGesture(DragGesture())
         .tabViewStyle(PageTabViewStyle())

@@ -1,5 +1,5 @@
 //
-//  OptionsView.swift
+//  SubscriptionView.swift
 //  OnboardingScreen
 //
 //  Created by AMALITECH MACBOOK on 16/06/2023.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct OptionsView: View {
+struct SubscriptionView: View {
     let screen = Screen()
     var body: some View {
         ZStack(alignment: .topTrailing) {
@@ -65,6 +65,6 @@ struct OptionsView: View {
 
 struct OptionsView_Previews: PreviewProvider {
     static var previews: some View {
-        OptionsView()
+        SubscriptionView()
     }
 }
