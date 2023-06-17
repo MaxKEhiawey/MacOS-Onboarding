@@ -26,6 +26,7 @@
 		EB0D6D302A3D1B9E00E1E127 /* SuccessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0D6D2F2A3D1B9E00E1E127 /* SuccessView.swift */; };
 		EB0D6D322A3D1BB900E1E127 /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0D6D312A3D1BB900E1E127 /* LottieView.swift */; };
 		EB0D6D342A3D250C00E1E127 /* RegisterForView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0D6D332A3D250C00E1E127 /* RegisterForView.swift */; };
+		EB0D6D3E2A3DB01B00E1E127 /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0D6D3D2A3DB01B00E1E127 /* OnboardingViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		EB0D6D2F2A3D1B9E00E1E127 /* SuccessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessView.swift; sourceTree = "<group>"; };
 		EB0D6D312A3D1BB900E1E127 /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
 		EB0D6D332A3D250C00E1E127 /* RegisterForView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterForView.swift; sourceTree = "<group>"; };
+		EB0D6D3D2A3DB01B00E1E127 /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,23 +121,17 @@
 		EB0D6CED2A3C543F00E1E127 /* OnboardingScreen */ = {
 			isa = PBXGroup;
 			children = (
-				EB0D6CEE2A3C543F00E1E127 /* OnboardingScreenApp.swift */,
-				EB0D6CF02A3C543F00E1E127 /* ContentView.swift */,
-				EB0D6D192A3C546900E1E127 /* TabsView.swift */,
+				EB0D6D3C2A3DAFEB00E1E127 /* ViewModels */,
+				EB0D6D352A3DAE7500E1E127 /* MainApp */,
 				EB0D6CF22A3C544100E1E127 /* Assets.xcassets */,
 				EB0D6CF42A3C544100E1E127 /* OnboardingScreen.entitlements */,
 				EB0D6CF52A3C544100E1E127 /* Preview Content */,
-				EB0D6D1B2A3C5EF200E1E127 /* RegisterView.swift */,
-				EB0D6D1D2A3C73F600E1E127 /* ComponentsView.swift */,
-				EB0D6D1F2A3CECDC00E1E127 /* AddPhotoView.swift */,
-				EB0D6D212A3CEE8B00E1E127 /* PhotoPickerView.swift */,
-				EB0D6D232A3CFFFA00E1E127 /* SubscriptionView.swift */,
-				EB0D6D252A3D00D500E1E127 /* SurveyView.swift */,
-				EB0D6D2B2A3D100B00E1E127 /* InterestsView.swift */,
-				EB0D6D2D2A3D104500E1E127 /* InterestOptionsView.swift */,
-				EB0D6D2F2A3D1B9E00E1E127 /* SuccessView.swift */,
-				EB0D6D312A3D1BB900E1E127 /* LottieView.swift */,
-				EB0D6D332A3D250C00E1E127 /* RegisterForView.swift */,
+				EB0D6D362A3DAED300E1E127 /* Register */,
+				EB0D6D3B2A3DAF9600E1E127 /* Components */,
+				EB0D6D3A2A3DAF6B00E1E127 /* Survey */,
+				EB0D6D372A3DAEF900E1E127 /* AddPhoto */,
+				EB0D6D392A3DAF4600E1E127 /* Interests */,
+				EB0D6D382A3DAF2100E1E127 /* Success */,
 			);
 			path = OnboardingScreen;
 			sourceTree = "<group>";
@@ -163,6 +159,77 @@
 				EB0D6D0C2A3C544100E1E127 /* OnboardingScreenUITestsLaunchTests.swift */,
 			);
 			path = OnboardingScreenUITests;
+			sourceTree = "<group>";
+		};
+		EB0D6D352A3DAE7500E1E127 /* MainApp */ = {
+			isa = PBXGroup;
+			children = (
+				EB0D6CEE2A3C543F00E1E127 /* OnboardingScreenApp.swift */,
+				EB0D6CF02A3C543F00E1E127 /* ContentView.swift */,
+				EB0D6D192A3C546900E1E127 /* TabsView.swift */,
+			);
+			path = MainApp;
+			sourceTree = "<group>";
+		};
+		EB0D6D362A3DAED300E1E127 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				EB0D6D332A3D250C00E1E127 /* RegisterForView.swift */,
+				EB0D6D1B2A3C5EF200E1E127 /* RegisterView.swift */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		EB0D6D372A3DAEF900E1E127 /* AddPhoto */ = {
+			isa = PBXGroup;
+			children = (
+				EB0D6D212A3CEE8B00E1E127 /* PhotoPickerView.swift */,
+				EB0D6D1F2A3CECDC00E1E127 /* AddPhotoView.swift */,
+			);
+			path = AddPhoto;
+			sourceTree = "<group>";
+		};
+		EB0D6D382A3DAF2100E1E127 /* Success */ = {
+			isa = PBXGroup;
+			children = (
+				EB0D6D312A3D1BB900E1E127 /* LottieView.swift */,
+				EB0D6D2F2A3D1B9E00E1E127 /* SuccessView.swift */,
+			);
+			path = Success;
+			sourceTree = "<group>";
+		};
+		EB0D6D392A3DAF4600E1E127 /* Interests */ = {
+			isa = PBXGroup;
+			children = (
+				EB0D6D2B2A3D100B00E1E127 /* InterestsView.swift */,
+				EB0D6D2D2A3D104500E1E127 /* InterestOptionsView.swift */,
+			);
+			path = Interests;
+			sourceTree = "<group>";
+		};
+		EB0D6D3A2A3DAF6B00E1E127 /* Survey */ = {
+			isa = PBXGroup;
+			children = (
+				EB0D6D232A3CFFFA00E1E127 /* SubscriptionView.swift */,
+				EB0D6D252A3D00D500E1E127 /* SurveyView.swift */,
+			);
+			path = Survey;
+			sourceTree = "<group>";
+		};
+		EB0D6D3B2A3DAF9600E1E127 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				EB0D6D1D2A3C73F600E1E127 /* ComponentsView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		EB0D6D3C2A3DAFEB00E1E127 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				EB0D6D3D2A3DB01B00E1E127 /* OnboardingViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -305,6 +372,7 @@
 				EB0D6D1C2A3C5EF200E1E127 /* RegisterView.swift in Sources */,
 				EB0D6D322A3D1BB900E1E127 /* LottieView.swift in Sources */,
 				EB0D6CF12A3C543F00E1E127 /* ContentView.swift in Sources */,
+				EB0D6D3E2A3DB01B00E1E127 /* OnboardingViewModel.swift in Sources */,
 				EB0D6D222A3CEE8B00E1E127 /* PhotoPickerView.swift in Sources */,
 				EB0D6CEF2A3C543F00E1E127 /* OnboardingScreenApp.swift in Sources */,
 				EB0D6D262A3D00D500E1E127 /* SurveyView.swift in Sources */,

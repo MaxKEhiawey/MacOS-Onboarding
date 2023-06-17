@@ -7,8 +7,8 @@
 
 import SwiftUI
 
-
 struct RegisterForView: View {
+  @Binding var count: Int
     let screen = Screen()
     @State var name: String = ""
     @State var email: String = ""
@@ -22,7 +22,8 @@ struct RegisterForView: View {
                 TextFieldView(fieldName: $email, fieldTitle: "E-mail", placeholder: "johndoe@gmail.com")
                 TextFieldView(fieldName: $password, fieldTitle: "Password", placeholder: "*********", isSecure: true)
                 Button {
-
+                    count+=1
+                
                 } label: {
                     Text("Create Account")
                         .font(.system(size: 22, weight: .light))
@@ -34,7 +35,7 @@ struct RegisterForView: View {
                             .stroke(Color("ColorBlueBG"), lineWidth: 1)
                     )
                 Button {
-
+                   
                 } label: {
                     HStack(spacing: 32) {
                         Image("google")
@@ -73,10 +74,14 @@ struct RegisterForView: View {
                     .font(.system(size: 22, weight: .regular))
                     .padding(.leading, 80)
                 Spacer()
-                Text("Exit")
-                    .foregroundColor(.black)
-                    .font(.system(size: 22, weight: .regular))
-                    .padding(.trailing, 40)
+                Button {
+                    count=4
+                } label: {
+                    Text("Exit")
+                        .foregroundColor(.black)
+                        .font(.system(size: 22, weight: .regular))
+                        .padding(.trailing, 40)
+                }
             }.padding(.top, 40)
 
         }

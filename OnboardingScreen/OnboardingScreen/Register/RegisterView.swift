@@ -8,22 +8,14 @@
 import SwiftUI
 
 struct RegisterView: View {
-
+    @ObservedObject var viewModel: OnboardingViewModel
     var body: some View {
-
       HStack {
           HalfPageView(image: "register")
-          RegisterForView()
-
+          RegisterForView(count: $viewModel.selectedTab)
         }
         .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .center)
         .background(.white)
         .background(ignoresSafeAreaEdges: .all)
-    }
-}
-
-struct RegisterView_Previews: PreviewProvider {
-    static var previews: some View {
-        RegisterView()
     }
 }
