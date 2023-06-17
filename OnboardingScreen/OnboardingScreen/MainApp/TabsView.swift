@@ -8,10 +8,10 @@
 import SwiftUI
 
 struct TabsView: View {
-    @State  var selectedTab = 0
+    @ObservedObject var viewModel = OnboardingViewModel()
     var body: some View {
-        TabView(selection: $selectedTab) {
-           RegisterView()
+        TabView(selection: $viewModel.selectedTab) {
+            RegisterView(viewModel: viewModel)
             .tag(0)
             AddPhotoView()
                 .tag(1)
@@ -22,9 +22,8 @@ struct TabsView: View {
             SuccessView()
                 .tag(4)
         }
-        .highPriorityGesture(DragGesture())
+       // .highPriorityGesture(DragGesture())
         .tabViewStyle(PageTabViewStyle())
-        .navigationBarBackButtonHidden(true)
     }
 }
 
