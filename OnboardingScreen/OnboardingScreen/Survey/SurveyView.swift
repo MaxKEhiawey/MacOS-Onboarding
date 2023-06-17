@@ -8,20 +8,15 @@
 import SwiftUI
 
 struct SurveyView: View {
+    @ObservedObject var viewModel: OnboardingViewModel
     var body: some View {
         HStack {
         HalfPageView(image: "pagethree")
-            SubscriptionView()
+        SubscriptionView(selectedTab: $viewModel.selectedTab)
     }
     .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .center)
         .background(.white)
         .background(ignoresSafeAreaEdges: .all)
 
-    }
-}
-
-struct SurveyView_Previews: PreviewProvider {
-    static var previews: some View {
-        SurveyView()
     }
 }

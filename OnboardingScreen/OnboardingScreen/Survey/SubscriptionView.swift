@@ -8,6 +8,11 @@
 import SwiftUI
 
 struct SubscriptionView: View {
+    @Binding var selectedTab: Int
+    @State var btn0 = true
+    @State var btn1 = false
+    @State var btn2 = false
+    @State var btn3 = false
     let screen = Screen()
     var body: some View {
         ZStack(alignment: .topTrailing) {
@@ -17,14 +22,14 @@ struct SubscriptionView: View {
                         .font(.system(size: 40, weight: .bold))
                     Text("This will help us make great recommendations.")
                     VStack(spacing: 32) {
-                        capsuleButton(isSelected: true, label: "+  Social Interaction") {}
-                        capsuleButton(label: "+  Personal development") {}
-                        capsuleButton(label: "+  Entertainment and fun") {}
-                        capsuleButton(label: "+  Rewards and recognition") {}
+                        capsuleButton(isSelected: btn0, label: "+  Social Interaction") {btn0.toggle()}
+                        capsuleButton(isSelected: btn1, label: "+  Personal development") {btn1.toggle()}
+                        capsuleButton(isSelected: btn2, label: "+  Entertainment and fun") {btn2.toggle()}
+                        capsuleButton(isSelected: btn3, label: "+  Rewards and recognition") {btn3.toggle()}
                     }
                     Spacer()
                     Button {
-
+                        selectedTab+=1
                     } label: {
                         Text("Continue")
                     }.frame(maxWidth: screen.screenSize.width*0.2)
@@ -36,7 +41,7 @@ struct SubscriptionView: View {
                                 .stroke(Color("ColorBlueBG"), lineWidth: 1)
                         )
                 }
-                .frame(height: screen.screenSize.height*0.9)
+                .frame(height: screen.screenSize.height*0.70)
             }
             .padding(.top, 48)
             .font(.system(size: 22, weight: .regular))
@@ -44,7 +49,7 @@ struct SubscriptionView: View {
             .foregroundColor(.black)
             HStack {
                 Button {
-
+                    selectedTab-=1
                 } label: {
                     HStack {
                         Image(systemName: "arrow.left")
@@ -60,11 +65,5 @@ struct SubscriptionView: View {
                 .foregroundColor(.black)
                 .font(.system(size: 22, weight: .regular))
         }
-    }
-}
-
-struct OptionsView_Previews: PreviewProvider {
-    static var previews: some View {
-        SubscriptionView()
     }
 }

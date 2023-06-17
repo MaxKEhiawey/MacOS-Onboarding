@@ -8,10 +8,11 @@
 import SwiftUI
 
 struct SuccessView: View {
+    @ObservedObject var viewModel: OnboardingViewModel
     var body: some View {
         HStack {
             HalfPageView(image: "success")
-            LottieView()
+            LottieView(selectedTab: $viewModel.selectedTab)
         }
         .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .center)
         .background(.white)
@@ -19,9 +20,3 @@ struct SuccessView: View {
 
     }
     }
-
-struct SuccessView_Previews: PreviewProvider {
-    static var previews: some View {
-        SuccessView()
-    }
-}

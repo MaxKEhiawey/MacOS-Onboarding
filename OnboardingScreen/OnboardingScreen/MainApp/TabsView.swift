@@ -13,13 +13,14 @@ struct TabsView: View {
         TabView(selection: $viewModel.selectedTab) {
             RegisterView(viewModel: viewModel)
             .tag(0)
-            AddPhotoView()
+           // @Binding var selectedTab: Int
+            AddPhotoView(viewModel: viewModel)
                 .tag(1)
-            SurveyView()
+            SurveyView(viewModel: viewModel)
                 .tag(2)
-            InterestsView()
+            InterestsView(viewModel: viewModel)
                 .tag(3)
-            SuccessView()
+            SuccessView(viewModel: viewModel)
                 .tag(4)
         }
        // .highPriorityGesture(DragGesture())
