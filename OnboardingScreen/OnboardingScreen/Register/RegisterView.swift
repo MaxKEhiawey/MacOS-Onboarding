@@ -12,7 +12,7 @@ struct RegisterView: View {
     var body: some View {
       HStack {
           HalfPageView(image: "register")
-          RegisterForView(count: $viewModel.selectedTab)
+          RegisterForView(selectedTab: $viewModel.selectedTab)
         }
         .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .center)
         .background(.white)

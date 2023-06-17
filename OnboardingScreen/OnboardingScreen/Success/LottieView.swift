@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct LottieView: View {
+    @Binding var selectedTab: Int
     let screen = Screen()
     var body: some View {
         ZStack(alignment: .topTrailing) {
@@ -17,6 +18,7 @@ struct LottieView: View {
                     Text("Woohoo!")
                         .font(.system(size: 40, weight: .bold))
                     Text("Hey there! Your registration is complete, get excited \nfor the ultimate quiz experience of your life. Let's do this!")
+                        .frame( height: 80)
                     VStack {
                         Image("lottie")
                     }
@@ -35,36 +37,13 @@ struct LottieView: View {
                         )
                 }
                 .multilineTextAlignment(.center)
-                .frame(height: screen.screenSize.height*0.9)
+                .frame(height: screen.screenSize.height*0.70)
 
             }
             .padding(.top, 48)
             .font(.system(size: 22, weight: .regular))
             .frame(maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .center)
             .foregroundColor(.black)
-            HStack {
-                Button {
-
-                } label: {
-                    HStack {
-                        Image(systemName: "arrow.left")
-                        Text("Back")
-                    }
-                }.padding(.leading, 80)
-                Spacer()
-                Text("Step 4 of 4")
-                Spacer()
-                Text("Exit")
-                    .padding(.trailing, 40)
-            }.padding(.top, 40)
-                .foregroundColor(.black)
-                .font(.system(size: 22, weight: .regular))
         }
-    }
-}
-
-struct LottieView_Previews: PreviewProvider {
-    static var previews: some View {
-        LottieView()
     }
 }

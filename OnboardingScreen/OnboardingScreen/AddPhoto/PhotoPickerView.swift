@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct PhotoPickerView: View {
+    @Binding var selectedTab: Int
     let screen = Screen()
     @State private var isAddImage: Bool = false
     var body: some View {
@@ -21,7 +22,12 @@ struct PhotoPickerView: View {
                         .cornerRadius(20)
                     Spacer()
                     Button {
-                        isAddImage.toggle()
+
+                        if isAddImage {
+                            selectedTab+=1
+                        } else {
+                            isAddImage.toggle()
+                        }
                     } label: {
                         Text(isAddImage ? "Continue": "Upload a photo")
                     }.frame(maxWidth: screen.screenSize.width*0.2)
@@ -34,13 +40,13 @@ struct PhotoPickerView: View {
                         )
                     if !isAddImage {
                         Button {
-
+                            selectedTab+=1
                     } label: {
                         Text("Skip")
                     }
                 }
                 }
-                .frame(height: screen.screenSize.height*0.95)
+                .frame(height: screen.screenSize.height*0.70)
             }
             .padding(.top, 40)
             .font(.system(size: 22, weight: .regular))
@@ -48,7 +54,7 @@ struct PhotoPickerView: View {
             .foregroundColor(.black)
             HStack {
                 Button {
-
+                    selectedTab-=1
                 } label: {
                     HStack {
                         Image(systemName: "arrow.left")
@@ -64,11 +70,5 @@ struct PhotoPickerView: View {
                 .foregroundColor(.black)
                 .font(.system(size: 22, weight: .regular))
         }
-    }
-}
-
-struct PhotoPickerView_Previews: PreviewProvider {
-    static var previews: some View {
-        PhotoPickerView()
     }
 }

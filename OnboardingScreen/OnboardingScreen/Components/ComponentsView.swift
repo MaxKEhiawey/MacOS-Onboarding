@@ -21,7 +21,6 @@ func capsuleButton(isSelected: Bool = false, label: String, action: @escaping ()
             .overlay(
                 RoundedRectangle(cornerRadius: 20)
                     .stroke(Color.gray, lineWidth: 1))
-
     }
 }
 //single textfield view
@@ -81,16 +80,14 @@ struct HalfPageView: View {
             VStack {
                 Image(image)
                     .resizable()
-                    .scaledToFill()
                     .edgesIgnoringSafeArea(.all)
 
             }
-            .frame(maxWidth: screen.screenSize.width*0.5, minHeight: 0, maxHeight: .infinity, alignment: .center)
             .padding(.leading)
             .background(
                 Image("backgroundImage")
                     .resizable()
-                    .scaledToFill()
+                    //.scaledToFill()
                     .edgesIgnoringSafeArea(.all)
             )
             .background(Color("ColorBlueBG"))

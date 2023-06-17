@@ -8,15 +8,18 @@
 import SwiftUI
 
 struct InterestOptionsView: View {
+    @Binding var selectedTab: Int
     let screen = Screen()
     var body: some View {
         ZStack(alignment: .topTrailing) {
-
             VStack(alignment: .center, spacing: 40) {
                 VStack(alignment: .center, spacing: 40) {
                     Text("Let’s get started by \npicking some interests.")
                         .font(.system(size: 40, weight: .bold))
+                        .multilineTextAlignment(.center)
+                        .frame( height: 100)
                     Text("Alright, let's pick something we're interested \nin and get started!")
+                        .frame( height: 80)
                     VStack(spacing: 16) {
                         HStack(spacing: 16) {
                             Image("interestgaming")
@@ -29,7 +32,7 @@ struct InterestOptionsView: View {
                     }
                     Spacer()
                     Button {
-
+                        selectedTab+=1
                     } label: {
                         Text("Continue")
                     }.frame(maxWidth: screen.screenSize.width*0.2)
@@ -42,7 +45,7 @@ struct InterestOptionsView: View {
                         )
                 }
                 .multilineTextAlignment(.center)
-                .frame(height: screen.screenSize.height*0.9)
+                .frame(height: screen.screenSize.height*0.70)
                 
             }
             .padding(.top, 48)
@@ -51,7 +54,7 @@ struct InterestOptionsView: View {
             .foregroundColor(.black)
             HStack {
                 Button {
-
+                    selectedTab-=1
                 } label: {
                     HStack {
                         Image(systemName: "arrow.left")
@@ -67,11 +70,5 @@ struct InterestOptionsView: View {
                 .foregroundColor(.black)
                 .font(.system(size: 22, weight: .regular))
         }
-    }
-}
-
-struct InterestOptionsView_Previews: PreviewProvider {
-    static var previews: some View {
-        InterestOptionsView()
     }
 }

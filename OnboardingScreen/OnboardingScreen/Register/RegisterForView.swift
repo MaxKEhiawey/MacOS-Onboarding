@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct RegisterForView: View {
-  @Binding var count: Int
+  @Binding var selectedTab: Int
     let screen = Screen()
     @State var name: String = ""
     @State var email: String = ""
@@ -22,7 +22,7 @@ struct RegisterForView: View {
                 TextFieldView(fieldName: $email, fieldTitle: "E-mail", placeholder: "johndoe@gmail.com")
                 TextFieldView(fieldName: $password, fieldTitle: "Password", placeholder: "*********", isSecure: true)
                 Button {
-                    count+=1
+                    selectedTab+=1
                 
                 } label: {
                     Text("Create Account")
@@ -35,7 +35,7 @@ struct RegisterForView: View {
                             .stroke(Color("ColorBlueBG"), lineWidth: 1)
                     )
                 Button {
-                   
+                    selectedTab+=1
                 } label: {
                     HStack(spacing: 32) {
                         Image("google")
@@ -58,12 +58,16 @@ struct RegisterForView: View {
                             .stroke(Color.gray, lineWidth: 1)
                     )
                 HStack {
-                    Text("Already have account?")
-                        .font(.system(size: 22, weight: .light))
-                        .foregroundColor(.gray)
-                    Text("Log In")
-                        .font(.system(size: 22, weight: .semibold))
-                        .foregroundColor(Color("ColorBlueBG"))
+                        Text("Already have account?")
+                            .font(.system(size: 22, weight: .light))
+                            .foregroundColor(.gray)
+                    Button {
+                        selectedTab+=1
+                    } label: {
+                        Text("Log In")
+                            .font(.system(size: 22, weight: .semibold))
+                            .foregroundColor(Color("ColorBlueBG"))
+                    }
                 }
             }
             .frame(maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .center)
@@ -75,7 +79,7 @@ struct RegisterForView: View {
                     .padding(.leading, 80)
                 Spacer()
                 Button {
-                    count=4
+                    selectedTab=4
                 } label: {
                     Text("Exit")
                         .foregroundColor(.black)
