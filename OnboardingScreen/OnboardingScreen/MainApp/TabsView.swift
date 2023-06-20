@@ -11,20 +11,32 @@ struct TabsView: View {
     @ObservedObject var viewModel = OnboardingViewModel()
     var body: some View {
         TabView(selection: $viewModel.selectedTab) {
-            RegisterView(viewModel: viewModel)
+
+            CombineHalfView(viewModel: viewModel, addedView:  {
+                RegisterForView(selectedTab: $viewModel.selectedTab)
+            }, imageName: .register)
             .tag(0)
-           // @Binding var selectedTab: Int
-            AddPhotoView(viewModel: viewModel)
+            CombineHalfView(viewModel: viewModel, addedView: {
+            PhotoPickerView(selectedTab: $viewModel.selectedTab)
+            }, imageName: .addphoto)
+            //AddPhotoView(viewModel: viewModel)
                 .tag(1)
-            SurveyView(viewModel: viewModel)
+            CombineHalfView(viewModel: viewModel, addedView: {
+            SubscriptionView(selectedTab: $viewModel.selectedTab)
+            }, imageName: .pagethree)
+           // SurveyView(viewModel: viewModel)
                 .tag(2)
-            InterestsView(viewModel: viewModel)
+            CombineHalfView(viewModel: viewModel, addedView: {
+                InterestOptionsView(selectedTab: $viewModel.selectedTab)
+            }, imageName: .pagefour)
+           // InterestsView(viewModel: viewModel)
                 .tag(3)
-            SuccessView(viewModel: viewModel)
+            CombineHalfView(viewModel: viewModel, addedView: {
+                LottieView(selectedTab: $viewModel.selectedTab)
+            }, imageName: .success)
                 .tag(4)
-        }
-       // .highPriorityGesture(DragGesture())
-        .tabViewStyle(PageTabViewStyle())
+        }.tabViewStyle(PageTabViewStyle())
+      //.highPriorityGesture(DragGesture())
     }
 }
 

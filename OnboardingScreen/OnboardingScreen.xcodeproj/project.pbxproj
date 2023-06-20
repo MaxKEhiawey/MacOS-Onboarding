@@ -15,15 +15,10 @@
 		EB0D6D0B2A3C544100E1E127 /* OnboardingScreenUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0D6D0A2A3C544100E1E127 /* OnboardingScreenUITests.swift */; };
 		EB0D6D0D2A3C544100E1E127 /* OnboardingScreenUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0D6D0C2A3C544100E1E127 /* OnboardingScreenUITestsLaunchTests.swift */; };
 		EB0D6D1A2A3C546900E1E127 /* TabsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0D6D192A3C546900E1E127 /* TabsView.swift */; };
-		EB0D6D1C2A3C5EF200E1E127 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0D6D1B2A3C5EF200E1E127 /* RegisterView.swift */; };
 		EB0D6D1E2A3C73F600E1E127 /* ComponentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0D6D1D2A3C73F600E1E127 /* ComponentsView.swift */; };
-		EB0D6D202A3CECDC00E1E127 /* AddPhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0D6D1F2A3CECDC00E1E127 /* AddPhotoView.swift */; };
 		EB0D6D222A3CEE8B00E1E127 /* PhotoPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0D6D212A3CEE8B00E1E127 /* PhotoPickerView.swift */; };
 		EB0D6D242A3CFFFA00E1E127 /* SubscriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0D6D232A3CFFFA00E1E127 /* SubscriptionView.swift */; };
-		EB0D6D262A3D00D500E1E127 /* SurveyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0D6D252A3D00D500E1E127 /* SurveyView.swift */; };
-		EB0D6D2C2A3D100B00E1E127 /* InterestsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0D6D2B2A3D100B00E1E127 /* InterestsView.swift */; };
 		EB0D6D2E2A3D104500E1E127 /* InterestOptionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0D6D2D2A3D104500E1E127 /* InterestOptionsView.swift */; };
-		EB0D6D302A3D1B9E00E1E127 /* SuccessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0D6D2F2A3D1B9E00E1E127 /* SuccessView.swift */; };
 		EB0D6D322A3D1BB900E1E127 /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0D6D312A3D1BB900E1E127 /* LottieView.swift */; };
 		EB0D6D342A3D250C00E1E127 /* RegisterForView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0D6D332A3D250C00E1E127 /* RegisterForView.swift */; };
 		EB0D6D3E2A3DB01B00E1E127 /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0D6D3D2A3DB01B00E1E127 /* OnboardingViewModel.swift */; };
@@ -59,15 +54,10 @@
 		EB0D6D0A2A3C544100E1E127 /* OnboardingScreenUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingScreenUITests.swift; sourceTree = "<group>"; };
 		EB0D6D0C2A3C544100E1E127 /* OnboardingScreenUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingScreenUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		EB0D6D192A3C546900E1E127 /* TabsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabsView.swift; sourceTree = "<group>"; };
-		EB0D6D1B2A3C5EF200E1E127 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		EB0D6D1D2A3C73F600E1E127 /* ComponentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentsView.swift; sourceTree = "<group>"; };
-		EB0D6D1F2A3CECDC00E1E127 /* AddPhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPhotoView.swift; sourceTree = "<group>"; };
 		EB0D6D212A3CEE8B00E1E127 /* PhotoPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPickerView.swift; sourceTree = "<group>"; };
 		EB0D6D232A3CFFFA00E1E127 /* SubscriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionView.swift; sourceTree = "<group>"; };
-		EB0D6D252A3D00D500E1E127 /* SurveyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyView.swift; sourceTree = "<group>"; };
-		EB0D6D2B2A3D100B00E1E127 /* InterestsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterestsView.swift; sourceTree = "<group>"; };
 		EB0D6D2D2A3D104500E1E127 /* InterestOptionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterestOptionsView.swift; sourceTree = "<group>"; };
-		EB0D6D2F2A3D1B9E00E1E127 /* SuccessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessView.swift; sourceTree = "<group>"; };
 		EB0D6D312A3D1BB900E1E127 /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
 		EB0D6D332A3D250C00E1E127 /* RegisterForView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterForView.swift; sourceTree = "<group>"; };
 		EB0D6D3D2A3DB01B00E1E127 /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
@@ -175,7 +165,6 @@
 			isa = PBXGroup;
 			children = (
 				EB0D6D332A3D250C00E1E127 /* RegisterForView.swift */,
-				EB0D6D1B2A3C5EF200E1E127 /* RegisterView.swift */,
 			);
 			path = Register;
 			sourceTree = "<group>";
@@ -184,7 +173,6 @@
 			isa = PBXGroup;
 			children = (
 				EB0D6D212A3CEE8B00E1E127 /* PhotoPickerView.swift */,
-				EB0D6D1F2A3CECDC00E1E127 /* AddPhotoView.swift */,
 			);
 			path = AddPhoto;
 			sourceTree = "<group>";
@@ -193,7 +181,6 @@
 			isa = PBXGroup;
 			children = (
 				EB0D6D312A3D1BB900E1E127 /* LottieView.swift */,
-				EB0D6D2F2A3D1B9E00E1E127 /* SuccessView.swift */,
 			);
 			path = Success;
 			sourceTree = "<group>";
@@ -201,7 +188,6 @@
 		EB0D6D392A3DAF4600E1E127 /* Interests */ = {
 			isa = PBXGroup;
 			children = (
-				EB0D6D2B2A3D100B00E1E127 /* InterestsView.swift */,
 				EB0D6D2D2A3D104500E1E127 /* InterestOptionsView.swift */,
 			);
 			path = Interests;
@@ -211,7 +197,6 @@
 			isa = PBXGroup;
 			children = (
 				EB0D6D232A3CFFFA00E1E127 /* SubscriptionView.swift */,
-				EB0D6D252A3D00D500E1E127 /* SurveyView.swift */,
 			);
 			path = Survey;
 			sourceTree = "<group>";
@@ -363,19 +348,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB0D6D1E2A3C73F600E1E127 /* ComponentsView.swift in Sources */,
-				EB0D6D202A3CECDC00E1E127 /* AddPhotoView.swift in Sources */,
 				EB0D6D1A2A3C546900E1E127 /* TabsView.swift in Sources */,
 				EB0D6D242A3CFFFA00E1E127 /* SubscriptionView.swift in Sources */,
-				EB0D6D302A3D1B9E00E1E127 /* SuccessView.swift in Sources */,
-				EB0D6D2C2A3D100B00E1E127 /* InterestsView.swift in Sources */,
 				EB0D6D2E2A3D104500E1E127 /* InterestOptionsView.swift in Sources */,
-				EB0D6D1C2A3C5EF200E1E127 /* RegisterView.swift in Sources */,
 				EB0D6D322A3D1BB900E1E127 /* LottieView.swift in Sources */,
 				EB0D6CF12A3C543F00E1E127 /* ContentView.swift in Sources */,
 				EB0D6D3E2A3DB01B00E1E127 /* OnboardingViewModel.swift in Sources */,
 				EB0D6D222A3CEE8B00E1E127 /* PhotoPickerView.swift in Sources */,
 				EB0D6CEF2A3C543F00E1E127 /* OnboardingScreenApp.swift in Sources */,
-				EB0D6D262A3D00D500E1E127 /* SurveyView.swift in Sources */,
 				EB0D6D342A3D250C00E1E127 /* RegisterForView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -543,8 +523,8 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
@@ -583,8 +563,8 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
