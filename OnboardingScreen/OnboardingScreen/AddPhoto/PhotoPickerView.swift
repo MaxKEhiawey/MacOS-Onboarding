@@ -8,21 +8,30 @@
 import SwiftUI
 
 struct PhotoPickerView: View {
+
     @Binding var selectedTab: Int
     let screen = Screen()
     @State private var isAddImage: Bool = false
+
     var body: some View {
+
         ZStack(alignment: .topTrailing) {
+
             VStack(alignment: .center, spacing: 40) {
+
                 VStack(alignment: .center, spacing: 40) {
+
                     Text("Add Photo")
                         .font(.system(size: 40, weight: .bold))
+
                     Text("Add a photo so other members know who you are.")
+
                     Image(isAddImage ? "colorImage": "imageplaceholder")
                         .cornerRadius(20)
-                    Spacer()
-                    Button {
 
+                    Spacer()
+
+                    Button {
                         if isAddImage {
                             selectedTab+=1
                         } else {
@@ -52,7 +61,9 @@ struct PhotoPickerView: View {
             .font(.system(size: 22, weight: .regular))
             .frame(maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .center)
             .foregroundColor(.black)
+
             HStack {
+
                 Button {
                     selectedTab-=1
                 } label: {
@@ -60,13 +71,21 @@ struct PhotoPickerView: View {
                         Image(systemName: "arrow.left")
                         Text("Back")
                     }
-                }.padding(.leading, 80)
+                }.padding(.leading, 16)
+
                 Spacer()
                 Text("Step 2 of 4")
                 Spacer()
-                Text("Exit")
-                    .padding(.trailing, 40)
-            }.padding(.top, 40)
+
+                Button {
+                    selectedTab=4
+                } label: {
+                    Text("Exit")
+                        .foregroundColor(.black)
+                        .font(.system(size: 22, weight: .regular))
+                        .padding(.trailing, 40)
+                }
+            }.padding(.top, 0)
                 .foregroundColor(.black)
                 .font(.system(size: 22, weight: .regular))
         }

@@ -8,10 +8,11 @@
 import SwiftUI
 
     // custom capsule button
-func capsuleButton(isSelected: Bool = false, label: String, action: @escaping () -> Void) -> some View {
+func capsuleButton(isSelected: Bool = false,
+                   label: String, action: @escaping () -> Void) -> some View {
     return Button(action: action) {
         Text(label)
-            .frame(maxWidth: Screen().screenSize.width*0.2)
+           .frame(maxWidth: Screen().screenSize.width*0.25)
             .padding(8)
             .foregroundColor(isSelected ? .white: .black)
             .background(
@@ -71,26 +72,18 @@ struct NiceButtonStyle: ButtonStyle {
 }
 // image page with blue background
 struct HalfPageView: View {
-    let screen = Screen()
     let image: String
     var body: some View {
         ZStack(alignment: .bottom) {
-            Rectangle()
-                .background(Color("ColorBlueBG"))
-            VStack {
-                Image(image)
-                    .resizable()
-                    .edgesIgnoringSafeArea(.all)
+            Image("backgroundImage")
+                .resizable()
+                .scaledToFill()
+                .clipped()
+            Image(image)
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .padding([.top, .horizontal], 64)
 
-            }
-            .padding(.leading)
-            .background(
-                Image("backgroundImage")
-                    .resizable()
-                    //.scaledToFill()
-                    .edgesIgnoringSafeArea(.all)
-            )
-            .background(Color("ColorBlueBG"))
         }
     }
 }
@@ -106,3 +99,34 @@ struct Screen {
 #endif
     }
 }
+
+//
+struct CombineHalfView<AddedView: View>: View {
+
+    @ObservedObject var viewModel: OnboardingViewModel
+    var addedView: () -> AddedView
+    var imageName: ImageNames
+    var body: some View {
+
+        GeometryReader { reader in
+            HStack {
+                HalfPageView(image: imageName.rawValue)
+                    .frame(width: reader.size.width/2, height: reader.size.height)
+                    .clipped()
+                addedView()
+                    .frame(width: reader.size.width/2, height: reader.size.height)
+            }
+            .background(.white)
+        }.edgesIgnoringSafeArea(.all)
+    }
+}
+enum ImageNames: String {
+    case register
+    case addphoto
+    case pagethree
+    case pagefour
+    case success
+}
+
+
+
